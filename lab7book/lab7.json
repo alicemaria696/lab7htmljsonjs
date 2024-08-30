@@ -1,0 +1,51 @@
+[
+    {
+      "title": "All The Light We Cannot See", 
+      "author": "Anthony Doerr",
+      "genre": "Fantasy",
+      "image": "bo1.jpg",
+      "Availability":"yes",
+      "cost":"800/-"
+    },
+    {
+      "title": "Stone Blind",
+      "author": "Natalie Haynes",
+      "genre": "Mystery",
+      "image": "bo2.webp",
+      "Availability":"yes",
+      "cost":"900/-"
+    },
+    {
+      "title": "Harry Potter and the philosopher's Stone",
+      "author": "J K Rowlings",
+      "genre": "Science Fiction",
+      "image": "bo3.jpg",
+      "Availability":"no",
+      "cost":"900/-"
+    },
+    {
+      "title": "The Alchemist",
+      "author": "Panlo Coelho",
+      "genre": "Fiction",
+      "image": "bo4.webp",
+      "Availability":"no",
+      "cost":"900/-"
+    },
+    {
+      "title": "Ignited Minds",
+      "author": "A P J Abdul Kalam",
+      "genre": "Fiction",
+      "image": "bo5.webp",
+      "Availability":"yes",
+      "cost":"800/-"
+    },
+    {
+      "title": "11 Rules For Life",
+      "author": "Chetan Bhagat",
+      "genre": "Pyschology",
+      "image": "bo6.webp",
+      "Availability":"no",
+      "cost":"800/-"
+    }
+  ]
+  

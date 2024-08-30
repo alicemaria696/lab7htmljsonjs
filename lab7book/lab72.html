@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Book List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(bo7.jpeg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            opacity: 0.8;
+        }
+        
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background: rgb(229, 223, 214);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        li {
+            background: orangered;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        
+        strong {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        img {
+            width: 300px;
+            height: 350px;
+            border: 3px solid black;
+        }
+        
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .error-message {
+            color: red;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .pagination button {
+            margin: 0 5px;
+        }
+        /* Add this to your existing CSS */
+.book-item {
+    position: relative;
+}
+
+.book-item .cost-label {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.book-item:hover .cost-label {
+    display: block;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Book List</h1>
+        <div class="error-message" id="error-message"></div>
+        <div class="controls">
+            <div class="form-group">
+                <label for="genre-filter" class="form-label"></label>
+                <select id="genre-filter" class="form-select">
+                    <option value="">All Genres</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sort-order" class="form-label"></label>
+                <select id="sort-order" class="form-select">
+                    <option value="title">Title</option>
+                    <option value="author">Author</option>
+                    <option value="genre">Genre</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="items-per-page" class="form-label"></label>
+                <input type="number" id="items-per-page" class="form-control" value="3">
+            </div>
+        </div>
+        <ul id="book-list"></ul>
+        <div class="pagination">
+            <button class="btn btn-dark" id="prev-page">Previous</button>
+            <button class="btn btn-dark" id="next-page">Next</button>
+        </div>
+
+    </div>
+    <script src="lab7jsonajax.js">
+        
+    </script>
+</body>
+</html>
